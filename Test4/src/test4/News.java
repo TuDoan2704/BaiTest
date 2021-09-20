@@ -71,13 +71,13 @@ public class News implements INews {
         return "News{" + "tittle=" + tittle + ", publishDate=" + publishDate + ", author=" + author + ", content=" + content + ", averageRate=" + averageRate + '}';
     }
     
-    int rateList[] = new int[3];
+   int rateList[] = new int[3];
     public float calculate(){
-        float total = 0;
+        
         for(int i = 0; i < rateList.length; i++){
-            total += rateList[i];
+            averageRate += rateList[i];
         }
-        averageRate = total/rateList.length;
+        averageRate = averageRate/rateList.length;
         return averageRate;
     }
     
