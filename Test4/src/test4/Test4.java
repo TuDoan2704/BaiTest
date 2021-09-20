@@ -17,27 +17,22 @@ public class Test4 {
         List<News> newlist = new ArrayList<>();
         News news = new News();
         while (true) {
-            
-        System.out.println("1 – Insert news");
-        System.out.println("2 – View list news");
-        System.out.println("3 – Average rate");
-        System.out.println("4 – Exit ");
+            System.out.println("1 – Insert news");
+            System.out.println("2 – View list news");
+            System.out.println("3 – Average rate");
+            System.out.println("4 – Exit ");
             String line = sc.nextLine();
             switch (line) {
                 case "1": {
-
                     news.setTittle("Derby Lodon");
-
                     news.setPublishDate("20/09/2021");
-
                     news.setAuthor("Tu");
-
                     news.setContent("Tot 0-3 Chel");
                     newlist.add(news);
                     System.out.println("Ban hay cho toi 3 danh gia: ");
                     int[] a = news.rateList;
-                    for(int i = 0; i < a.length; i++){                 
-                        a[i] = sc.nextInt();                      
+                    for (int i = 0; i < a.length; i++) {
+                        a[i] = sc.nextInt();
                     }
                     break;
                 }
@@ -45,8 +40,7 @@ public class Test4 {
                     news.display();
                     break;
                 }
-                case "3":{
-                    
+                case "3": {
                     news.calculate();
                     news.display();
                     break;
@@ -54,11 +48,7 @@ public class Test4 {
                 case "4": {
                     return;
                 }
-
-                
-
             }
         }
     }
-
 }

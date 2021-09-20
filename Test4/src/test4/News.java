@@ -80,5 +80,4 @@ public class News implements INews {
         averageRate = averageRate/rateList.length;
         return averageRate;
     }
-    
 }
